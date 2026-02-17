@@ -2,7 +2,7 @@
 # the students  attendance tracker - setup_project.sh
 
 
-echo "STUDENTS ATTANDANCE TRACKER"
+echo "THE STUDENTS ATTANDANCE TRACKER"
 echo " ---------------------------"
 echo ""
 
