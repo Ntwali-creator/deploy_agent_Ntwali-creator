@@ -1,5 +1,5 @@
 #!/bin/bash
-# student  attendance tracker - setup_project.sh
+# the students  attendance tracker - setup_project.sh
 
 
 echo "STUDENTS ATTANDANCE TRACKER"
