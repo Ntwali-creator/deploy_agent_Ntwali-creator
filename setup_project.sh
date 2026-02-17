@@ -8,6 +8,11 @@ echo ""
 
 read -p "Enter project name : " NAME
 
+if [ -z "$NAME" ]; then
+echo "project name can't be empty"
+exit 1
+fi
+
 echo ""
 DIR="attendance_tracker_${NAME}"
 echo "this project will be created in the :$DIR"
@@ -52,8 +57,8 @@ else
 fi
 
 
-if [ -f "assets.csv" ]; then 
-        cp "assets.csv" "$DIR/Helpers/"
+if [ -f "Helpers/assets.csv" ]; then 
+        cp "Helpers/assets.csv" "$DIR/Helpers/"
         echo "successfully copied:assets.csv"
 
 else 
@@ -65,8 +70,8 @@ fi
 
 
 
-        if [ -f "config.json" ]; then
-                cp "config.json" "$DIR/Helpers/"
+        if [ -f "Helpers/config.json" ]; then
+                cp "Helpers/config.json" "$DIR/Helpers/"
                 echo "is copied :config.json"
 
         else
@@ -75,8 +80,8 @@ fi
 
         fi
 
-        if [ -f "reports.log" ]; then
-                cp "reports.log" "$DIR/reports/"
+        if [ -f "reports/reports.log" ]; then
+                cp "reports/reports.log" "$DIR/reports/"
                 echo " is copied: reports.log"
         else
                 touch "$DIR/reports/reports.log"
